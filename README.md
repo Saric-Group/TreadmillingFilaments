@@ -4,15 +4,16 @@ This repository contains the source codes and analysis files for the results rep
 | Directory | Contents |
 | ---------- | ---------|
 | `src_minimalmodel` | Contains the `lib_littleguys` Python library for the minimal model (model 0) simulations |
+| `experiments_minimalmodel` | Contains the `json` parameter files for the data explored in the paper, together with the simulation launcher|
 
-## Installation of the src
+## Installation of the `src_minimalmodel`
 ```pip install -e .```
 
 ## How to run the codes
 
-The 'Little Guys' simulations can be run by installing the `lib_littleguys` library. 
+Simulations can be run by installing the `lib_littleguys` library. 
 
-- Simulation data is produced in the `experiments` folder
+- Simulation data is produced in the `experiments_minimalmodel` folder
 - Fill in `.json` files to launch the parameters for the simulations
 - Use the script `launch_experiments.py` to launch simulations.
     - It produces both the directory tree as well as the slurm scripts to submit simulations to the cluster 
