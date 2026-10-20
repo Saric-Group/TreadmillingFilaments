@@ -1,0 +1,12 @@
+{
+    "sigma": 1.0,
+    "bbscale": 5,
+    "prefactor": 0.5,
+    "variables": 
+    {
+        "angle_open":[60.0], 
+        "angle_4_k":[100.0], 
+        "x":[0.1], 
+        "seed":[111]
+    }
+}

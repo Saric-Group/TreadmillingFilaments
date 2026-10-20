@@ -1,0 +1,8 @@
+{
+    "job_name": "DirGrowth",
+    "nodes":1,
+    "hours":100,
+    "memory":"1G",
+    "usermail":"maitane.munoz-basagoiti@ista.ac.at",
+    "environment_name":"env_littleguys"
+}

@@ -1,0 +1,22 @@
+{
+    "loops":100000000,
+    "dumptime":100,
+    "variables": 
+    {   
+        "angle_open":[30.0], 
+        "x":[0.3], 
+        "angle_4_k":[100.0], 
+        "prefactor":[0.1],
+        "epsilon_bottom": [10.0],
+        "epsilon_top": [100.0],
+        "cutoff_bottom": [1.0],
+        "cutoff_top": [2.0],
+        "numblocks":[3],
+        "xlo":[-3000],
+        "xhi":[3000],
+        "epsilon_top_final" : [5.0],
+        "hydrolysisfreq": [5000000],
+        "hydrolysis_probability" : [0.005, 0.001, 0.0005, 0.0001],
+        "coupled_interfaces": [true]
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "job_name": "CP25",
+    "nodes":1,
+    "hours":240,
+    "memory":"500M",
+    "usermail":"maitane.munoz-basagoiti@ista.ac.at",
+    "environment_name":"env_littleguys"
+}
