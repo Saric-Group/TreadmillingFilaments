@@ -14,7 +14,7 @@ Download the repository, and install it by running the following command where t
 
 ## How to run the codes
 
-Simulations can be run by installing the `lib_littleguys` library. 
+Simulations can be run by installing the `lib_minimalmodel` library. 
 
 - Simulation data is produced in the `experiments_minimalmodel` folder
 - Fill in `.json` files to launch the parameters for the simulations
