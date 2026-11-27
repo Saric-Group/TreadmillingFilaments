@@ -1,5 +1,5 @@
 # Cytomotive (treadmilling) filaments
-This repository contains the source codes and analysis files for the results reported in the paper 'Design and self-assembly of cytomotive filaments' (M. Krstić, C. Vahnille-Campos, B. Baum, M. Muñoz-Basagoiti and A. Šarić, 2026).
+This repository contains the source codes for the results reported in the paper 'Design and self-assembly of cytomotive filaments' (M. Krstić, C. Vahnille-Campos, B. Baum, M. Muñoz-Basagoiti and A. Šarić, 2026).
 
 | Directory | Contents |
 | ---------- | ---------|
@@ -7,6 +7,9 @@ This repository contains the source codes and analysis files for the results rep
 | `experiments_minimalmodel` | Contains the `json` parameter files for the data explored in the paper, together with the simulation launcher|
 
 ## Installation of the `src_minimalmodel`
+
+Download the repository, and install it by running the following command where the `*.toml` file is:
+
 ```pip install -e .```
 
 ## How to run the codes
