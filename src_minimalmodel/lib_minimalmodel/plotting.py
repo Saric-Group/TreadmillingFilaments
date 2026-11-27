@@ -1,4 +1,4 @@
-from lib_littleguys.molecule_templates import generate_buildingblock_structure
+from lib_minimalmodel.molecule_templates import generate_buildingblock_structure
 import os
 import matplotlib as mpl
 import numpy as np

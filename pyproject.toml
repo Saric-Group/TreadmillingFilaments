@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lib_minimalmodel"
+version = "0.1"
+description = "Library for treadmilling minimal model simulation"
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.setuptools]
+packages = ["lib_minimalmodel"]
+package-dir = {"" = "src_minimalmodel"}

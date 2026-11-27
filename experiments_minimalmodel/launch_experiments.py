@@ -1,5 +1,5 @@
 import json, os, itertools, random
-from lib_littleguys import *
+from lib_minimalmodel import *
 from dataclasses import asdict 
 
 if __name__=="__main__":
@@ -10,9 +10,9 @@ if __name__=="__main__":
 
     # [CHANGE HERE] set the name of your experiment
     # choose from: 'sim_single_monomer', 'sim_directional_growth', 'sim_treadmilling', 'sim_stabilitypolymer'
-    experiment_codename = 'sim_treadmilling_pnasrevision' 
+    experiment_codename = 'sim_directional_growth' 
     # [CHANGE HERE] set the index so that you can choose from the parameters
-    index = "3"
+    index = "1"
     # [CHANGE HERE] how many seeds do you want 
     num_seeds = 100
 

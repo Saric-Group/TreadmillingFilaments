@@ -1,5 +1,5 @@
 import numpy as np 
-from lib_littleguys.molecule_templates import generate_buildingblock_structure, generate_chevron_structure, generate_triangle_structure
+from lib_minimalmodel.molecule_templates import generate_buildingblock_structure, generate_chevron_structure, generate_triangle_structure
 
 def write_initconfig(SimulationParameters, is_seed = False, treadmilling = False):
 

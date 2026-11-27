@@ -2,7 +2,7 @@ import lammps
 import numpy as np
 from collections import defaultdict, deque
 import random, sys
-from lib_littleguys import analysis_functions
+from lib_minimalmodel import analysis_functions
 
 def hydrolysis_happens(hydrolysis_probability): #returns true or false, DONE
     # Generate a random number between 0 and 1
@@ -658,7 +658,7 @@ def equilibrium_treadmilling_run(SimulationParameters):
 def write_treadmilling_program(dirname):
 
     to_write=f"""
-from lib_littleguys import treadmilling, parameters
+from lib_minimalmodel import treadmilling, parameters
 import json
 
 # load the json file in the directory

@@ -433,7 +433,7 @@ def equilibrium_polymerization_run(SimulationParameters, factor_increase = 2, fa
 def write_polymerization_program(dirname):
 
     to_write="""
-from lib_littleguys import polymerization, parameters
+from lib_minimalmodel import polymerization, parameters
 import json
 
 # load the json file in the directory
