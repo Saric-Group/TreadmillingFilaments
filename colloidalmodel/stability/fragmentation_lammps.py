@@ -5,7 +5,6 @@ import time
 from tqdm import tqdm
 import argparse
 import ast
-import get_com_from_lammps_output_3types_rigidity_newannealing_growingpolymer
 import signal
 
 def find_clusters(particles, bonds):

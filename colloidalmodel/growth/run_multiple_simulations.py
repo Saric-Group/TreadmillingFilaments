@@ -1,5 +1,3 @@
-import growing_polymer_increasebox_changeboxsize
-import get_com_from_lammps_output_3types_rigidity_newannealing_growingpolymer
 import numpy as np
 import matplotlib.pyplot as plt
 import os
@@ -129,8 +127,8 @@ def classify_monomers(bonds, monomer1, monomer2):
 
 
 
-sim_path = '/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/postanalysis_rerun_constant_concentration_final/littleguys_eps8_detailed_balance_moreoutput_getmolidfromatomid'
-path_ind = '/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/postanalysis_rerun_constant_concentration_final/littleguys_triangle_fullinterface_nomiddlemonomer_2/sd12396'
+sim_path = #SET PATH OF NEW SIMULATION FOLDER
+path_ind = #PATH OF THE INDIVIDUAL TXT FILE
 
 Nseeds = 300
 seed = 189

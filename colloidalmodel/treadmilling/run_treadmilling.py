@@ -1,7 +1,5 @@
 import restart_fragmentation_analysis
-import growing_rectbox_treadmilling_mol_hydrolysis
 import growing_rectbox_treadmilling_mol_hydrolysis_more_monomers_fixbondreact_bubbles_sameconc
-import growing_polymer_increasebox_changeboxsize_vary_bond_stiffness_rectbox_treadmilling
 import os
 import numpy as np
 import glob
@@ -62,10 +60,6 @@ def run_treadmilling(old_sim_polymer_path,new_folder,eps,epsilon_top_final, hydr
         
         growing_rectbox_treadmilling_mol_hydrolysis_more_monomers_fixbondreact_bubbles_sameconc.run_simulation(sim_path_new, seed= seed,nMonsSol=1, run_interval=200, run_steps=2000000000, dump_steps=10000, eps = eps, cutoff =1.1, debug_mode=True, print_mode=False, Nseeds=1, hydrolysis_probability=hydrolysis_probability, epsilon_top_final=epsilon_top_final, which_simulation=which_simulation)
         #fragmentation_lammps.run_simulation(sim_path_new, Lbox=60,  nMonsSol=1, seed=seed, cutoff=1.4, run_interval=10, run_steps=2000000, dump_steps=10000, debug_mode=True,eps=eps, print_mode=False, Nseeds=1, which_simulation=which_simulation)
-    elif which_simulation == 'GA':
-        #path_to_ind_text_file = '/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/check_individuals_volume_exclusion'
-        path_to_ind_text_file = '/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/check_individual_tail_hindering'
-        growing_polymer_increasebox_changeboxsize_vary_bond_stiffness_rectbox_treadmilling.run_simulation(sim_path_new, path_to_ind_text_file, nMonsSol=1, run_interval=100, run_steps=1000000000, dump_steps=10000, eps = eps, cutoff =1.1, debug_mode=True, print_mode=False, Nseeds=1, hydrolysis_probability=hydrolysis_probability, epsilon_top_final = epsilon_top_final,which_simulation = 'GA',init_region_L_width=15, init_region_L_height=15)
     
     
 

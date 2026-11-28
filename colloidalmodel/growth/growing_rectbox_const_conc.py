@@ -12,7 +12,6 @@ import networkx as nx
 
 import write_lammps_more_monomers_3_types_vary_bond_stiffness
 import write_lammps_more_monomers_3_types_vary_bond_stiffness_switch
-import write_lammps_more_monomers_3_types_growingpolymer_anglepotential
 
 """
 To be able to run this script and use fix/adapt with cosine squared potential add the following to src/EXTRA-PAIR/pair_cosine_squared.cpp:

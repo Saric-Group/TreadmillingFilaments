@@ -18,13 +18,6 @@ def run_fragmentation_analysis(old_sim_polymer_path,new_folder,eps,cutoff, inclu
     #seed = random.randint(0, 100000)
     
     sim_path_new = new_folder + "/seed_" + str(seed)
-    #sim_path_new = "/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/fragmentation_analysis/tail_blocking_fragmentation/eps_" + str(eps) + "/seed_" + str(seed)
-    #sim_path_new = "/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/fragmentation_analysis/capper_fragmentation/eps_" + str(eps) + "/seed_" + str(seed)
-    
-    #old_sim_polymer_path = '/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/good_ind_scan_for_asymmetry/tail_blocking_monomer_deletion2/sd10878' #5880000 for 5 monomers tail
-    #old_sim_polymer_path = '/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/good_ind_scan_for_asymmetry/volume_exclusion_monomer_deletion2/sd10878'#6720000 for 5 monomers capper
-    #old_sim_polymer_path = "/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/LG_withextrabond_kineticpolarity/sd10878" #6950000 for 50 monomers, 3870000 for 25 monomers, 330000 for 4 monomers, 830000 for 5 monomers
-    #old_sim_polymer_path ="/nfs/scistore26/saricgrp/mkrstic/ga_code/postanalysis/postanalysis_rerun_constant_concentration_final/littleguys_chevron_fullinterface_nomiddlemonomer_2/sd10878" #proper chevron, 6380000 for 50 monomers, 3920000 for 25
     trajectory_output_file = old_sim_polymer_path + "/output_com.xyz"
     bond_output_file = old_sim_polymer_path + "/bonds.xyz"
     new_output_file_config = sim_path_new + "/restart_config.dat"
