@@ -34,6 +34,8 @@ Additionally, we also use a custom-made LAMMPS angle potential called `harmswitc
 
 To compile, you can use the `lammpscompilation_treadmilling.sh` script.
 
+To run the code in GA_code and colloidalmodel, LAMMPS is run through python scripts - MAIN_GA_code and run_treadmilling/fragmentation/growth. To enable this build LAMMPS following instructions from https://docs.lammps.org/Python_install.htmlhttps://docs.lammps.org/Python_install.html
+
 ### Updates in LAMMPS needed for the code
 To be able to run this script and use fix/adapt with cosine squared potential add the following to `src/EXTRA-PAIR/pair_cosine_squared.cpp`:
     
