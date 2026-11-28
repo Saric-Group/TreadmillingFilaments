@@ -23,6 +23,8 @@ Simulations require the `lib_minimalmodel` library.
 - Use the script `launch_experiments.py` to launch simulations.
     - It produces both the directory tree as well as the slurm scripts to submit simulations to the cluster (if applicable)
     - The job arrays can be launched by running `sbatch --array=1-X slurm_submissions.sh`
+ 
+The GA code can be run by running MAIN_GA_code, while the colloidal simulations are run through run_treadmilling/fragmentation/growth. All of these LAMMPS simulation are run in python, and parallelised using https://signac.readthedocs.io/en/latest/#. The other files contain helper function which mostly handle input file writing. The GA_code and growth simulations require no prior inputs, however the code for fragmentation and treadmilling simulations requires an input path of a polymer grown to a certain length as a starting configuration. When reproducing the data therefore, one should first run growth simulations for the colloidal model, which should be used as inputs for the fragmentation and treadmilling simulations.
 
 ## LAMMPS Compilation
 
@@ -34,7 +36,7 @@ Additionally, we also use a custom-made LAMMPS angle potential called `harmswitc
 
 To compile, you can use the `lammpscompilation_treadmilling.sh` script.
 
-To run the code in GA_code and colloidalmodel, LAMMPS is run through python scripts - MAIN_GA_code and run_treadmilling/fragmentation/growth. To enable this build LAMMPS following instructions from https://docs.lammps.org/Python_install.htmlhttps://docs.lammps.org/Python_install.html
+To run the code in GA_code and colloidalmodel, LAMMPS is run through python scripts. To enable this build LAMMPS following instructions from https://docs.lammps.org/Python_install.htmlhttps://docs.lammps.org/Python_install.html
 
 ### Updates in LAMMPS needed for the code
 To be able to run this script and use fix/adapt with cosine squared potential add the following to `src/EXTRA-PAIR/pair_cosine_squared.cpp`:
